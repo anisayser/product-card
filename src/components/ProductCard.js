@@ -61,8 +61,8 @@ const ProductCard = () => {
     return (
         <div className="group relative">
             <div className="border border-b-0 p-5">
-                <span className="bg-red-500/20 py-1 px-2 rounded absolute left-3 top-3">
-                    <span className="text-red-500 font-semibold">Sale</span>
+                <span className="bg-red-500/20 pb-1 px-2 rounded absolute left-3 top-3">
+                    <span className="text-red-500 text-xs font-[500]">Sale</span>
                 </span>
 
                 {/* PRODUCT IMAGE AND SLIDER */}
@@ -92,30 +92,30 @@ const ProductCard = () => {
             </div>
 
             {/* PRODUCT TITLE */}
-            <div className="border border-b-0 border-t-0 px-5 pb-4 pt-4 lg:pt-9 2xl:pt-5">
+            <div className="border border-b-0 border-t-0 px-5 lg:px-6 pb-4 pt-4 lg:pt-9 2xl:pt-5">
                 <h4 className="text-pera text-sm pb-1">Smart TV</h4>
-                <h2 className="text-xl font-[500]">Sanung 85Q70A 85 Inch QLED 4K UHD Smart LED Television</h2>
+                <h2 className="text-md font-[500]">Sanung 85Q70A 85 Inch QLED 4K UHD Smart LED Television</h2>
             </div>
 
             {/* PRODUCT RATING */}
             <div className="border border-b-0 border-t-0 px-5 pb-4 lg:pb-0 lg:group-hover:hidden">
                 <div className="flex items-center space-x-2 pb-2">
                     <div className="flex">
-                        <AiFillStar className="text-yellow-400 text-lg" />
-                        <AiFillStar className="text-yellow-400 text-lg" />
-                        <AiFillStar className="text-yellow-400 text-lg" />
-                        <AiFillStar className="text-yellow-400 text-lg" />
-                        <AiFillStar className="text-yellow-400 text-lg" />
+                        <AiFillStar className="text-yellow-400 text-sm" />
+                        <AiFillStar className="text-yellow-400 text-sm" />
+                        <AiFillStar className="text-yellow-400 text-sm" />
+                        <AiFillStar className="text-yellow-400 text-sm" />
+                        <AiFillStar className="text-yellow-400 text-sm" />
                     </div>
                     <span className="text-pera">(5.0)</span>
                 </div>
 
                 <div className="flex items-center">
-                    <BsCurrencyDollar className="text-2xl text-primary" />
-                    <h4 className="text-xl text-primary font-semibold">2036.00</h4>
+                    <BsCurrencyDollar className="text-lg text-primary" />
+                    <h4 className="text-md text-primary font-semibold">2036.00</h4>
                     <div className="flex items-center ml-2 -space-x-1">
-                        <BsCurrencyDollar className="text-lg text-pera" />
-                        <span className="text-pera line-through">3000.00</span>
+                        <BsCurrencyDollar className="text-sm text-pera" />
+                        <span className="text-pera line-through text-sm">3000.00</span>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@ const ProductCard = () => {
 
             {/* ADD TO CART BUTTON */}
             <div className="p-5 border border-t-0">
-                <button className="py-3 w-full bg-secondary hover:bg-primary text-primary hover:text-white duration-300 ease-linear font-[500] rounded flex items-center justify-center space-x-2"><span>Add To Cart</span> <HiOutlineShoppingBag className="text-xl" /></button>
+                <button className="py-3 w-full text-sm bg-secondary hover:bg-primary text-primary hover:text-white duration-300 ease-linear font-[500] rounded flex items-center justify-center space-x-2"><span>Add To Cart</span> <HiOutlineShoppingBag className="text-xl" /></button>
             </div>
         </div>
     )
