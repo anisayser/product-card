@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import FlashProduct from "./components/FlashProduct";
+import TrendingProduct from "./components/TrendingProduct/TrendingProduct";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="container-fluid px-5 md:px-10 mx-auto">
+        <FlashProduct />
+      </div>
+
+      <div className="bg-tertiary">
+        <div className="container-fluid px-5 md:px-10 mx-auto">
+
+          <TrendingProduct />
+        </div>
+      </div>
     </div>
   );
 }
