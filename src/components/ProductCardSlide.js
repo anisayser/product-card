@@ -1,4 +1,3 @@
-import React, { useCallback, useRef } from 'react'
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,21 +9,10 @@ import "swiper/css/pagination";
 
 
 const ProductCardSlide = () => {
-    const sliderRef = useRef(null);
 
-    const handlePrev = useCallback(() => {
-        if (!sliderRef.current) return;
-        sliderRef.current.swiper.slidePrev();
-    }, []);
 
-    const handleNext = useCallback(() => {
-        if (!sliderRef.current) return;
-        sliderRef.current.swiper.slideNext();
-    }, []);
     return (
         <div>
-
-
             <Swiper
                 pagination={{
                     bulletActiveClass: 'swiper-pagination-bullet-active',
@@ -34,7 +22,6 @@ const ProductCardSlide = () => {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev'
                 }}
-                // loop={true}
                 modules={[Navigation, Pagination]}
             >
                 <SwiperSlide className="borde mb-2">

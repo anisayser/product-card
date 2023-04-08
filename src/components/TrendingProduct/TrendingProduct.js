@@ -1,7 +1,5 @@
 import React from 'react';
-import { AiFillStar } from "react-icons/ai";
-import { BsCurrencyDollar, BsFillArrowLeftCircleFill, BsArrowRight, BsArrowLeft } from "react-icons/bs";
-import { HiOutlineShoppingBag } from "react-icons/hi";
+import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import Slider from "react-slick";
 import proImg from "../../images/Rectangle 1887-5.png";
 import proImg2 from "../../images/Rectangle 1887-6.png";
@@ -90,7 +88,7 @@ const TrendingProduct = () => {
                         <h2 className="text-lg sm:text-2xl inline-block"><span className="font-[900]">Food</span> For Health</h2>
                     </div>
 
-                    {/* __FASHION SLIDER__ */}
+                    {/* __FOOD FOR HEALTH SLIDER__ */}
                     <div className="pt-14 sm:pt-5 pb-5">
                         <Slider {...settings}>
                             {
@@ -112,7 +110,7 @@ const TrendingProduct = () => {
                         <h2 className="text-lg sm:text-2xl inline-block"><span className="font-[900]">Cosmetics</span> For Winter</h2>
                     </div>
 
-                    {/* __FASHION SLIDER__ */}
+                    {/* __COSMETICS FOR WINTER SLIDER__ */}
                     <div className="pt-14 sm:pt-5 pb-5">
                         <Slider {...settings}>
                             {

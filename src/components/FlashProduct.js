@@ -90,10 +90,12 @@ const FlashProduct = () => {
 
     return (
         <div className="py-5">
+            {/* FLASH SALE HEADER TOP */}
             <div className="flex flex-col md:flex-row items-center space-x-2 space-y-5 md:space-y-0">
                 <div className="border-2 border-black p-1">
                     <h2 className="text-2xl sm:text-4xl"><span className="font-[900]">Flash</span> Sale Product</h2>
                 </div>
+                {/* THE COUNTDOWN */}
                 <Countdown date={Date.now() + 200000000} renderer={props => (
                     <div className="flex items-center space-x-2">
                         <span className="bg-info/30 py-1 px-2 text-info font-bold rounded">{props.days}d</span>
@@ -111,6 +113,7 @@ const FlashProduct = () => {
             <div className="grid grid-cols-12 gap-4">
 
                 <div className="col-span-12 lg:col-span-10 pt-14 sm:pt-10 pb-10">
+                    {/* FLASH SALE PRODUCT SLIDER */}
                     <Slider {...settings}>
                         {
                             [...Array(10).keys()].map((product, index) => (
@@ -121,6 +124,8 @@ const FlashProduct = () => {
                         }
                     </Slider>
                 </div>
+
+                {/* ADVERTISE IMAGE */}
                 <div className="col-span-12 lg:col-span-2 flex items-end justify-center w-full pt-2 pb-10">
                     <div className="">
                         <img src={addImg} className="w-full cursor-pointer" alt="" />
