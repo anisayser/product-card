@@ -92,7 +92,7 @@ const ProductCard = () => {
                 </div>
             </div>
 
-            <div className="border border-b-0 border-t-0 px-5 py-4">
+            <div className="border border-b-0 border-t-0 px-5 pb-4 pt-4 lg:pt-9 2xl:pt-5">
                 <h4 className="text-pera text-sm pb-1">Smart TV</h4>
                 <h2 className="text-xl font-[500]">Sanung 85Q70A 85 Inch QLED 4K UHD Smart LED Television</h2>
             </div>

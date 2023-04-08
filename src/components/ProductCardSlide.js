@@ -1,13 +1,19 @@
 import React, { useCallback, useRef } from 'react'
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
-import { Navigation, Pagination } from "swiper";
+import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import proImg from "../images/Rectangle 1887.png";
 import proImg2 from "../images/Rectangle 1887-1.png";
+import SwiperCore, {
+    Navigation
+} from 'swiper';
 
 import 'swiper/css';
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+
+// install Swiper modules
+SwiperCore.use([Navigation]);
 
 const ProductCardSlide = () => {
     const sliderRef = useRef(null);
@@ -23,12 +29,7 @@ const ProductCardSlide = () => {
     }, []);
     return (
         <div>
-            <div className="swiper-button swiper-button-prev absolute" onClick={handlePrev}>
-                <BsFillArrowLeftCircleFill className="text-3xl text-black bg-white rounded-full" />
-            </div>
-            <div className="swiper-button swiper-button-next absolute" onClick={handleNext}>
-                <BsFillArrowRightCircleFill className="text-3xl text-black bg-white rounded-full" />
-            </div>
+
 
             <Swiper
                 pagination={{
@@ -39,12 +40,11 @@ const ProductCardSlide = () => {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev'
                 }}
-                onSlideChange={() => { }}
-                onSwiper={(swiper) => { }}
                 loop={true}
                 modules={[Navigation, Pagination]}
+                className=""
             >
-                <SwiperSlide>
+                <SwiperSlide className="borde mb-2">
                     <div>
                         <img src={proImg2} className="mx-auto" alt="" />
                     </div>
@@ -59,6 +59,12 @@ const ProductCardSlide = () => {
                         <img src={proImg2} className="mx-auto" alt="" />
                     </div>
                 </SwiperSlide>
+                <div className="swiper-button swiper-button-prev absolute" >
+                    <BsFillArrowLeftCircleFill className="text-3xl text-black bg-white rounded-full" />
+                </div>
+                <div className="swiper-button swiper-button-next absolute" >
+                    <BsFillArrowRightCircleFill className="text-3xl text-black bg-white rounded-full" />
+                </div>
             </Swiper>
         </div>
     )

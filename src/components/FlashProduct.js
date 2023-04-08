@@ -121,7 +121,7 @@ const FlashProduct = () => {
                         }
                     </Slider>
                 </div>
-                <div className="hidden lg:flex items-end col-span-2 w-full pt-2 pb-10">
+                <div className="col-span-12 lg:col-span-2 flex items-end justify-center w-full pt-2 pb-10">
                     <div className="">
                         <img src={addImg} className="w-full cursor-pointer" alt="" />
                     </div>
