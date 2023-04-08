@@ -34,9 +34,8 @@ const ProductCardSlide = () => {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev'
                 }}
-                loop={true}
+                // loop={true}
                 modules={[Navigation, Pagination]}
-                className=""
             >
                 <SwiperSlide className="borde mb-2">
                     <div>
