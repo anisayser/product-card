@@ -107,7 +107,7 @@ const ProductCard = () => {
                         <AiFillStar className="text-yellow-400 text-sm" />
                         <AiFillStar className="text-yellow-400 text-sm" />
                     </div>
-                    <span className="text-pera">(5.0)</span>
+                    <span className="text-pera text-xs">(5.0)</span>
                 </div>
 
                 <div className="flex items-center">
