@@ -24,7 +24,7 @@ const ProductCardSlide = () => {
                 }}
                 modules={[Navigation, Pagination]}
             >
-                <SwiperSlide className="borde mb-2">
+                <SwiperSlide className="mb-2">
                     <div>
                         <img src={proImg2} className="mx-auto" alt="" />
                     </div>

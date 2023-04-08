@@ -98,7 +98,7 @@ const ProductCard = () => {
             </div>
 
             {/* PRODUCT RATING */}
-            <div className="border border-b-0 border-t-0 px-5 pb-4 lg:pb-0 lg:group-hover:hidden">
+            <div className="border border-b-0 border-t-0 px-5 pb-4 lg:pb-0 lg:group-hover:hidden h-14">
                 <div className="flex items-center space-x-2 pb-2">
                     <div className="flex">
                         <AiFillStar className="text-yellow-400 text-sm" />
@@ -121,7 +121,7 @@ const ProductCard = () => {
             </div>
 
             {/* PRODUCT ACTIONS */}
-            <div className="lg:hidden flex lg:group-hover:flex items-center justify-around border-t border-b py-1">
+            <div className="lg:hidden flex lg:group-hover:flex items-center justify-around border-t border-b py-1 h-14">
                 <div className="hover:bg-black p-4 rounded-full text-black hover:text-white duration-200 ease-linear cursor-pointer">
                     <AiOutlineEye className="text-lg" />
                 </div>
