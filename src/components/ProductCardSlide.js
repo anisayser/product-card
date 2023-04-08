@@ -1,19 +1,13 @@
 import React, { useCallback, useRef } from 'react'
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
-import { Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import proImg from "../images/Rectangle 1887.png";
 import proImg2 from "../images/Rectangle 1887-1.png";
-import SwiperCore, {
-    Navigation
-} from 'swiper';
-
 import 'swiper/css';
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// install Swiper modules
-SwiperCore.use([Navigation]);
 
 const ProductCardSlide = () => {
     const sliderRef = useRef(null);

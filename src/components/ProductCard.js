@@ -96,7 +96,7 @@ const ProductCard = () => {
                 <h4 className="text-pera text-sm pb-1">Smart TV</h4>
                 <h2 className="text-xl font-[500]">Sanung 85Q70A 85 Inch QLED 4K UHD Smart LED Television</h2>
             </div>
-            <div className="border border-b-0 border-t-0 px-5 group-hover:hidden">
+            <div className="border border-b-0 border-t-0 px-5 pb-4 lg:pb-0 lg:group-hover:hidden">
                 <div className="flex items-center space-x-2 pb-2">
                     <div className="flex">
                         <AiFillStar className="text-yellow-400 text-lg" />
@@ -118,16 +118,16 @@ const ProductCard = () => {
                 </div>
             </div>
 
-            <div className="hidden group-hover:flex items-center justify-around border-t border-b py-1">
-                <div className="hover:bg-black p-4 rounded-full text-pera hover:text-white duration-200 ease-linear cursor-pointer">
+            <div className="lg:hidden flex lg:group-hover:flex items-center justify-around border-t border-b py-1">
+                <div className="hover:bg-black p-4 rounded-full text-black hover:text-white duration-200 ease-linear cursor-pointer">
                     <AiOutlineEye className="text-lg" />
                 </div>
                 <span className="w-[1px] h-5 bg-[#E5E7EB]"></span>
-                <div className="hover:bg-black p-4 rounded-full text-pera hover:text-white duration-200 ease-linear cursor-pointer">
+                <div className="hover:bg-black p-4 rounded-full text-black hover:text-white duration-200 ease-linear cursor-pointer">
                     <FiHeart className="text-lg" />
                 </div>
                 <span className="w-[1px] h-5 bg-[#E5E7EB]"></span>
-                <div className="hover:bg-black p-4 rounded-full text-pera hover:text-white duration-200 ease-linear cursor-pointer">
+                <div className="hover:bg-black p-4 rounded-full text-black hover:text-white duration-200 ease-linear cursor-pointer">
                     <BiSortAlt2 className="text-lg" />
                 </div>
             </div>
